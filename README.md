@@ -1,7 +1,7 @@
 
 # Frontend Mentor - Time tracking dashboard solution ✅
 
-![Design preview for Time tracking dashboard coding challenge]()
+![Design preview for Time tracking dashboard coding challenge](./public/design/preview.webp)
 
 This is a solution to the **[Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw)** by **[Dacardonac](https://github.com/Dacardonac)**. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
