@@ -3,87 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Frontend Mentor Challenge to practice HTML, CSS, JS and Fetch" />
-  <meta name="keywords" content="Frontend, Frontendmentor, Fetch, API, HTML, CSS, JavaScript, JS, Vite, Sass, Scss, Challenge, Card, Daniel, Alejandro, Cano, Cardona" />
-  <meta name="organization" content="Frontend Mentor" />
+  <meta name="description" content="Track your daily, weekly, and monthly activities with our time tracking dashboard." />
+  <meta name="keywords" content="Time tracking, productivity, dashboard, frontend, API, JavaScript, SCSS" />
   <meta name="author" content="Daniel Alejandro Cano Cardona" />
   <meta name="designer" content="Frontend Mentor" />
   <meta name="copyright" content="© 2024 Frontend Mentor. All rights reserved" />
-  <meta name="robots" content="index,follow" />
-  <meta name="googlebot" content="index,follow" />
-  <meta name="revisit-after" content="15days" />
-  <meta property="og:title" content="Frontend Mentor | Time tracking dashboard">
-  <meta property="og:description" content="Time tracking dashboard.">
+  <meta property="og:title" content="Frontend Mentor | Time Tracking Dashboard">
+  <meta property="og:description" content="An interactive time tracking dashboard to monitor daily, weekly, and monthly activities.">
   <script defer type="module" src="./src/scripts/main.js"></script>
   <link rel="stylesheet" href="./src/styles/main.scss">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/ico" sizes="32x32" href="./src/assets/icons/favicon-32x32.ico">
-  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/icons/favicon-32x32.png">
+  <title>Time Tracking Dashboard | Frontend Mentor</title>
 </head>
 <body>
-  <main>
-    Report for
-    Jeremy Robson
-
-    Daily
-    Weekly
-    Monthly
-
-    Work
-    5hrs <!-- daily -->
-    Previous - 7hrs <!-- daily -->
-    32hrs <!-- weekly -->
-    Previous - 36hrs <!-- weekly -->
-    103hrs <!-- monthly -->
-    Previous - 128hrs <!-- monthly -->
-
-    Play
-    1hr <!-- daily -->
-    Previous - 2hrs <!-- daily -->
-    10hrs <!-- weekly -->
-    Previous - 8hrs <!-- weekly -->
-    23hrs <!-- monthly -->
-    Previous - 29hrs <!-- monthly -->
-
-    Study
-    0hrs <!-- daily -->
-    Previous - 1hr <!-- daily -->
-    4hrs <!-- weekly -->
-    Previous - 7hrs <!-- weekly -->
-    13hrs <!-- monthly -->
-    Previous - 19hrs <!-- monthly -->
-
-    Exercise
-    1hr <!-- daily -->
-    Previous - 1hr <!-- daily -->
-    4hrs <!-- weekly -->
-    Previous - 5hrs <!-- weekly -->
-    11hrs <!-- monthly -->
-    Previous - 18hrs <!-- monthly -->
-
-    Social
-    1hr <!-- daily -->
-    Previous - 3hrs <!-- daily -->
-    5hrs <!-- weekly -->
-    Previous - 10hrs <!-- weekly -->
-    21hrs <!-- monthly -->
-    Previous - 23hrs <!-- monthly -->
-
-    Self Care
-    0hrs <!-- daily -->
-    Previous - 1hr <!-- daily -->
-    2hrs <!-- weekly -->
-    Previous - 2hrs <!-- weekly -->
-    7hrs <!-- monthly -->
-    Previous - 11hrs <!-- monthly -->
-  </main>
-    <footer class="footer">
-      <div class="footer__attribution">
-        Challenge by <a class="attribution__links-link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a class="footer__links" href="https://github.com/Dacardonac" target="_blank">Daniel Alejandro Cano Cardona</a>.
+  <main class="dashboard" aria-label="Time tracking dashboard">
+    <article class="user">
+      <div class="user__info">
+        <figure>
+          <img class="user__info-avatar" src="./src/assets/images/image-jeremy.webp" alt="Profile picture of Jeremy Robson">
+        </figure>
+        <div class="user__details">
+          <p class="user__details-report">Report for</p>
+          <h1 class="user__details-name">Jeremy Robson</h1>
+        </div>
       </div>
+      <nav class="user__controls" aria-label="Time tracking options">
+        <button class="user__control-button" data-option="Daily" aria-pressed="false">Daily</button>
+        <button class="user__control-button" data-option="Weekly" aria-pressed="true">Weekly</button>
+        <button class="user__control-button" data-option="Monthly" aria-pressed="false">Monthly</button>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="footer" aria-label="Footer">
+    <div class="footer__attribution">
+      Challenge by <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>.
+      Coded by <a class="footer__link" href="https://github.com/Dacardonac" target="_blank" rel="noopener">Daniel Alejandro Cano Cardona</a>.
+    </div>
   </footer>
 </body>
 </html>

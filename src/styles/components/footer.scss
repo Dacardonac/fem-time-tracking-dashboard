@@ -1,12 +1,16 @@
 .footer {
-  padding: 1rem 0 0 0;
-  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.75rem;
+  color: var(--grey);
 
-  &__attribution {
-    font-size: 0.75rem;
-  }
+  &__link {
+    color: var(--white);
+    text-decoration: none;
 
-  &__links {
-    color: hsl(228, 45%, 44%);
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
   }
 }
