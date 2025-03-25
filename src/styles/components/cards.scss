@@ -1,0 +1,65 @@
+.card {
+  background-color: var(--orange-300); // It depends on the type of card
+  border-radius: 1rem;
+  width: 350px;
+
+  &__header {
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+
+    &-icon {
+      // It depends on the type of card
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      position: relative;
+      top: -11px;
+      margin-right: 1rem;
+    }
+  }
+
+  &__content {
+    background-color: var(--navy-900);
+    border-radius: 0.75rem;
+    padding: 1rem;
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-title {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--white);
+    }
+
+    &-options {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    &-hours {
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: var(--white);
+      margin: 0.5rem 0;
+    }
+
+    &-previous {
+      font-size: 0.9rem;
+      color: var(--navy-200);
+    }
+  }
+}

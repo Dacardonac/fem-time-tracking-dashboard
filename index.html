@@ -36,8 +36,25 @@
         <button class="user__control-button" id="monthlyBtn" data-option="Monthly">Monthly</button>
       </nav>
     </article>
-  </main>
 
+    <article class="card">  <!-- It depends on the type of card -->
+      <header class="card__header">
+        <img class="card__header-icon" src="./src/assets/icons/icon-work.svg" alt="Work icon">
+      </header>
+      <div class="card__content">
+        <header class="card__content-header">
+          <h2 class="card__content-title">Work</h2>
+          <button class="card__content-options" aria-label="Options">
+            <img src="./src/assets/icons/icon-ellipsis.svg" alt="Ellipsis icon">
+          </button>
+        </header>
+        <main class="card__content-details">
+          <h3 class="card__content-hours">32hrs</h3>
+          <p class="card__content-previous">Last Week - 36hrs</p>
+        </main>
+      </div>
+    </article>
+  </main>
   <footer class="footer" aria-label="Footer">
     <div class="footer__attribution">
       Challenge by <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>.
