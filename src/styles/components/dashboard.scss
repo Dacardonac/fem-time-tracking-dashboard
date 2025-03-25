@@ -52,6 +52,11 @@
       justify-content: space-around;
       align-items: center;
       margin-bottom: 1rem;
+
+      .active {
+        color: var(--white);
+        font-weight: 500;
+      }
     }
 
     &__control {
@@ -69,7 +74,7 @@
           color: var(--white);
         }
 
-        &[aria-pressed="true"] {
+        &[aria-pressed='true'] {
           color: var(--white);
           font-weight: 500;
         }
