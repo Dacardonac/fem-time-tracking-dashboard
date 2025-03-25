@@ -1,138 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <meta
-      name="description"
-      content="Track your daily, weekly, and monthly activities with our time tracking dashboard."
-    />
-    <meta
-      name="keywords"
-      content="Time tracking, productivity, dashboard, frontend, API, JavaScript, SCSS"
-    />
-    <meta
-      name="author"
-      content="Daniel Alejandro Cano Cardona"
-    />
-    <meta
-      name="designer"
-      content="Frontend Mentor"
-    />
-    <meta
-      name="copyright"
-      content="© 2024 Frontend Mentor. All rights reserved"
-    />
-    <meta
-      property="og:title"
-      content="Frontend Mentor | Time Tracking Dashboard"
-    />
-    <meta
-      property="og:description"
-      content="An interactive time tracking dashboard to monitor daily, weekly, and monthly activities."
-    />
-    <script
-      defer
-      type="module"
-      src="./src/scripts/main.js"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="./src/styles/main.scss"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./src/assets/icons/favicon-32x32.png"
-    />
-    <title>Time Tracking Dashboard | Frontend Mentor</title>
-  </head>
-  <body>
-    <main
-      class="dashboard"
-      aria-label="Time tracking dashboard"
-    >
-      <article class="user">
-        <div class="user__info">
-          <figure>
-            <img
-              class="user__info-avatar"
-              src="./src/assets/images/image-jeremy.webp"
-              alt="Profile picture of Jeremy Robson"
-            />
-          </figure>
-          <div class="user__details">
-            <p class="user__details-report">Report for</p>
-            <h1 class="user__details-name">Jeremy Robson</h1>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Track your daily, weekly, and monthly activities with our time tracking dashboard." />
+  <meta name="keywords" content="Time tracking, productivity, dashboard, frontend, API, JavaScript, SCSS" />
+  <meta name="author" content="Daniel Alejandro Cano Cardona" />
+  <meta name="designer" content="Frontend Mentor" />
+  <meta name="copyright" content="© 2024 Frontend Mentor. All rights reserved" />
+  <meta property="og:title" content="Frontend Mentor | Time Tracking Dashboard">
+  <meta property="og:description" content="An interactive time tracking dashboard to monitor daily, weekly, and monthly activities.">
+  <script defer type="module" src="./src/scripts/main.js"></script>
+  <link rel="stylesheet" href="./src/styles/main.scss">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/icons/favicon-32x32.png">
+  <title>Time Tracking Dashboard | Frontend Mentor</title>
+</head>
+<body>
+  <main class="dashboard" aria-label="Time tracking dashboard">
+    <article class="user">
+      <div class="user__info">
+        <figure>
+          <img class="user__info-avatar" src="./src/assets/images/image-jeremy.webp" alt="Profile picture of Jeremy Robson">
+        </figure>
+        <div class="user__details">
+          <p class="user__details-report">Report for</p>
+          <h1 class="user__details-name">Jeremy Robson</h1>
         </div>
-        <nav
-          class="user__controls"
-          aria-label="Time tracking options"
-        >
-          <button
-            class="user__control-button"
-            id="dailyBtn"
-            data-option="Daily"
-          >
-            Daily
-          </button>
-          <button
-            class="user__control-button"
-            id="weeklyBtn"
-            data-option="Weekly"
-          >
-            Weekly
-          </button>
-          <button
-            class="user__control-button"
-            id="monthlyBtn"
-            data-option="Monthly"
-          >
-            Monthly
-          </button>
-        </nav>
-      </article>
-    </main>
-
-    <footer
-      class="footer"
-      aria-label="Footer"
-    >
-      <div class="footer__attribution">
-        Challenge by
-        <a
-          class="footer__link"
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-          rel="noopener"
-          >Frontend Mentor</a
-        >. Coded by
-        <a
-          class="footer__link"
-          href="https://github.com/Dacardonac"
-          target="_blank"
-          rel="noopener"
-          >Daniel Alejandro Cano Cardona</a
-        >.
       </div>
-    </footer>
-  </body>
+      <nav class="user__controls" aria-label="Time tracking options">
+        <button class="user__control-button" id="dailyBtn" data-option="Daily">Daily</button>
+        <button class="user__control-button" id="weeklyBtn" data-option="Weekly">Weekly</button>
+        <button class="user__control-button" id="monthlyBtn" data-option="Monthly">Monthly</button>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="footer" aria-label="Footer">
+    <div class="footer__attribution">
+      Challenge by <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>.
+      Coded by <a class="footer__link" href="https://github.com/Dacardonac" target="_blank" rel="noopener">Daniel Alejandro Cano Cardona</a>.
+    </div>
+  </footer>
+</body>
 </html>
