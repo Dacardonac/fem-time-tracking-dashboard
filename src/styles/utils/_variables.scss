@@ -1,20 +1,20 @@
 // Colors
 :root {
-/* Primary */
---purple-600: hsl(246, 80%, 60%);
---orange-300: hsl(15, 100%, 70%); // (work)
---blue-300: hsl(195, 74%, 62%); // (play)
---pink-400: hsl(348, 100%, 68%); // (study)
---green-400: hsl(145, 58%, 55%); // (exercise)
---purple-700: hsl(264, 64%, 52%); // (social)
---yellow-300: hsl(43, 84%, 65%); // (self care)
+  /* Primary */
+  --purple-600: hsl(246, 80%, 60%);
+  --work: hsl(15, 100%, 70%); // (orange-300)
+  --play: hsl(195, 74%, 62%); // (blue-300)
+  --study: hsl(348, 100%, 68%); // (pink-400)
+  --exercise: hsl(145, 58%, 55%); // (green-400)
+  --social: hsl(264, 64%, 52%); // (purple-700)
+  --self-care: hsl(43, 84%, 65%); // (yellow-300)
 
-/* Neutral */
---white: hsl(0, 0%, 100%);
---black: hsl(0, 0%, 0%);
---grey: hsla(0, 0%, 64%, 0.91);
---navy-950: hsl(226, 43%, 10%);
---navy-900: hsl(235, 46%, 20%);
---purple-500: hsl(235, 45%, 61%);
---navy-200: hsl(236, 100%, 87%);
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --grey: hsla(0, 0%, 64%, 0.91);
+  --navy-950: hsl(226, 43%, 10%);
+  --navy-900: hsl(235, 46%, 20%);
+  --purple-500: hsl(235, 45%, 61%);
+  --navy-200: hsl(236, 100%, 87%);
 }
