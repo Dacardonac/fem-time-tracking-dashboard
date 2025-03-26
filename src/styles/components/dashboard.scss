@@ -6,28 +6,31 @@
   padding: 2rem;
 
   .user {
-    background-color: var(--navy-900);
-    border-radius: 1.5rem;
-    width: 350px;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 327px;
+    height: 203px;
+    background-color: var(--navy-900);
+    border-radius: 15px;
 
     &__info {
-      background-color: var(--purple-600);
-      border-radius: 1rem;
-      padding: 1.2rem;
       display: flex;
       align-items: center;
       gap: 1.2rem;
+      width: 327px;
+      padding: 32px 39px 37px 32px;
+      background-color: var(--purple-600);
+      border-radius: 15px;
       font-weight: 300;
 
       &-avatar {
-        width: 75px;
-        height: 75px;
+        width: 64px;
+        height: 64px;
         border-radius: 50%;
         object-fit: cover;
-        border: 2px solid var(--white);
+        border: 3px solid var(--white);
       }
     }
 
@@ -36,48 +39,49 @@
       flex-direction: column;
 
       &-report {
-        font-size: 0.875rem;
-        color: var(--grey-light);
+        font-size: 15px;
+        line-height: 18px;
+        color: var(--navy-200);
       }
 
       &-name {
-        font-size: 1.5rem;
+        margin-top: 8px;
+        font-size: 24px;
         font-weight: 300;
+        line-height: 28px;
         color: var(--white);
       }
     }
 
     &__controls {
       display: flex;
-      justify-content: space-around;
       align-items: center;
-      margin-bottom: 1rem;
+      justify-content: space-between;
+      width: 100%;
+      margin: 24px 0 25px 0;
 
       .active {
-        color: var(--white);
         font-weight: 500;
+        color: var(--white);
       }
     }
 
-    &__control {
-      &-button {
-        background-color: transparent;
-        color: var(--grey);
-        padding: 0.8rem 1.2rem;
-        border: none;
-        border-radius: 0.5rem;
-        cursor: pointer;
-        font-size: 1rem;
+    &__control-button {
+      width: 109px;
+      background-color: transparent;
+      color: var(--purple-500);
+      cursor: pointer;
+      font-size: 17.5px;
+      line-height: 21px;
 
-        &:hover,
-        &:focus {
-          color: var(--white);
-        }
+      &:hover,
+      &:focus {
+        color: var(--white);
+      }
 
-        &[aria-pressed='true'] {
-          color: var(--white);
-          font-weight: 500;
-        }
+      &[aria-pressed='true'] {
+        font-weight: 500;
+        color: var(--white);
       }
     }
   }
