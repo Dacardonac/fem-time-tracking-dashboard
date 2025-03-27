@@ -8,10 +8,23 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   async function fetchData() {
     try {
-      let response = await fetch('data.json');
+      let response = await fetch('/data.json');
       return await response.json();
     } catch (error) {
       console.error('Error', error);
+      Swal.fire({
+        toast: true,
+        position: 'top-end',
+        icon: 'error',
+        title: 'Error loading data',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+        },
+      });
     }
   }
 
@@ -61,4 +74,53 @@ document.addEventListener('DOMContentLoaded', async () => {
   data = await fetchData();
   activeButton();
   printCards(data, 'weekly');
+
+  dailyBtn.addEventListener('click', () => {
+    printCards(data, 'daily');
+    Swal.fire({
+      toast: true,
+      position: 'top-end',
+      icon: 'success',
+      title: 'Daily data loaded',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.onmouseenter = Swal.stopTimer;
+        toast.onmouseleave = Swal.resumeTimer;
+      },
+    });
+  });
+  monthBtn.addEventListener('click', () => {
+    printCards(data, 'monthly');
+    Swal.fire({
+      toast: true,
+      position: 'top-end',
+      icon: 'success',
+      title: 'Monthly data loaded',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.onmouseenter = Swal.stopTimer;
+        toast.onmouseleave = Swal.resumeTimer;
+      },
+    });
+  });
+  weekBtn.addEventListener('click', () => {
+    printCards(data, 'weekly');
+    Swal.fire({
+      toast: true,
+      position: 'top-end',
+      icon: 'success',
+      title: 'Weekly data loaded',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.onmouseenter = Swal.stopTimer;
+        toast.onmouseleave = Swal.resumeTimer;
+      },
+    });
+  });
 });
