@@ -1,36 +1,41 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.5rem;
 
   .card {
-    width: 327px;
-    height: 160px;
-    border-radius: 15px;
-    cursor: pointer;
+    width: 20.4375rem;
+    height: 10rem;
+    border-radius: 0.9375rem;
+    transition: 0.5s ease;
+
+    &:hover {
+      transition: 0.5s ease;
+      scale: 1.01;
+    }
 
     &__header {
       display: flex;
       justify-content: flex-end;
       overflow: hidden;
       width: 100%;
-      height: 38px;
+      height: 2.375rem;
 
       &-icon {
-        width: 78px;
+        width: 4.875rem;
         height: auto;
         object-fit: cover;
         position: relative;
         margin-right: 1rem;
-        top: 1px;
+        top: 0.0625rem;
       }
     }
 
     &__content {
       background-color: var(--navy-900);
-      border-radius: 15px;
-      padding: 27.5px 24px;
-      height: 122px;
+      border-radius: 0.9375rem;
+      padding: 1.71875rem 1.5rem;
+      height: 7.625rem;
       transition: 0.5s ease;
 
       &:hover {
@@ -50,8 +55,8 @@
       }
 
       &-title {
-        font-size: 18px;
-        line-height: 21px;
+        font-size: 1.125rem;
+        line-height: 1.3125rem;
         font-weight: 500;
         color: var(--white);
       }
@@ -62,22 +67,22 @@
         cursor: pointer;
 
         img {
-          width: 15.51px;
-          height: 3.64px;
+          width: 0.969375rem;
+          height: 0.2275rem;
         }
       }
 
       &-hours {
-        font-size: 32px;
+        font-size: 2rem;
         font-weight: 300;
-        line-height: 38px;
+        line-height: 2.375rem;
         color: var(--white);
         margin: 0.5rem 0;
       }
 
       &-previous {
-        font-size: 15px;
-        line-height: 18px;
+        font-size: 0.9375rem;
+        line-height: 1.125rem;
         color: var(--navy-200);
       }
     }
@@ -91,30 +96,30 @@
     justify-content: center;
 
     .card {
-      width: 188px;
-      height: 213px;
+      width: 11.75rem;
+      height: 13.3125rem;
 
       &__header {
-        height: 33px;
+        height: 2.0625rem;
 
         &-icon {
-          width: 57px;
+          width: 3.5625rem;
         }
       }
 
       &__content {
-        width: 188px;
-        height: 180px;
-        padding: 25.5px 21.5px;
+        width: 11.75rem;
+        height: 11.25rem;
+        padding: 1.59375rem 1.34375rem;
 
         &-details {
           flex-direction: column;
         }
 
         &-hours {
-          font-size: 56px;
-          line-height: 66px;
-          margin-top: 16px;
+          font-size: 3.5rem;
+          line-height: 4.125rem;
+          margin-top: 1rem;
         }
       }
     }
@@ -125,33 +130,33 @@
   .container {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
+    gap: 1.5rem;
 
     .card {
-      width: 188px;
-      height: 213px;
+      width: 11.75rem;
+      height: 13.3125rem;
 
       &__header {
-        height: 33px;
+        height: 2.0625rem;
 
         &-icon {
-          width: 57px;
+          width: 3.5625rem;
         }
       }
 
       &__content {
-        width: 188px;
-        height: 180px;
-        padding: 25.5px 21.5px;
+        width: 11.75rem;
+        height: 11.25rem;
+        padding: 1.59375rem 1.34375rem;
 
         &-details {
           flex-direction: column;
         }
 
         &-hours {
-          font-size: 56px;
-          line-height: 66px;
-          margin-top: 16px;
+          font-size: 3.5rem;
+          line-height: 4.125rem;
+          margin-top: 1rem;
         }
       }
     }
@@ -160,34 +165,39 @@
 
 @media (min-width: 1025px) {
   .container {
-    gap: 32px;
-    max-width: 829px;
+    gap: 2rem;
+    max-width: 51.8125rem;
 
     .card {
-      width: 255px;
-      height: 244px;
+      width: 15.9375rem;
+      height: 15.25rem;
 
       &__header {
-        height: 45px;
+        height: 2.8125rem;
 
         &-icon {
-          width: 79px;
+          width: 4.9375rem;
         }
       }
 
       &__content {
-        width: 255px;
-        height: 199px;
-        padding: 31px 30px;
+        width: 15.9375rem;
+        height: 12.4375rem;
+        padding: 1.9375rem 1.875rem;
+
+        &-options img {
+          width: 1.3125rem;
+          height: 0.3125rem;
+        }
 
         &-details {
           flex-direction: column;
         }
 
         &-hours {
-          font-size: 56px;
-          line-height: 66px;
-          margin-top: 24px;
+          font-size: 3.5rem;
+          line-height: 4.125rem;
+          margin-top: 1.5rem;
         }
       }
     }

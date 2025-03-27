@@ -4,6 +4,7 @@
   align-items: center;
   gap: 1.5rem;
   padding: 2rem;
+  margin: auto;
 
   .user {
     display: flex;
@@ -74,7 +75,6 @@
       font-size: 1.125rem;
       line-height: 1.3125rem;
       letter-spacing: 0.04375rem;
-      text-align: left;
 
       &:hover,
       &:focus,
@@ -136,6 +136,10 @@
         gap: 1.3125rem;
         padding: 2rem;
         margin: 0;
+      }
+
+      &__control-button {
+        text-align: left;
       }
     }
   }
