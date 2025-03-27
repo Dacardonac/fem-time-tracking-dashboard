@@ -49,6 +49,12 @@ document.addEventListener('DOMContentLoaded', async () => {
       article.classList.add('card');
       article.style.backgroundColor = `var(--${item.title.toLowerCase().replace(/ /g, '-')})`;
       article.setAttribute('aria-label', `${item.title} tracking card`);
+      const previousLabel =
+        timeframe === 'daily'
+          ? 'Yesterday'
+          : timeframe === 'weekly'
+            ? 'Last Week'
+            : 'Last Month';
 
       article.innerHTML = `
         <header class="card__header">
@@ -62,8 +68,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             </button>
           </header>
           <main class="card__content-details">
-            <h3 class="card__content-hours">${item.timeframes[timeframe].current}hrs</h3>
-            <p class="card__content-previous">Last Week - ${item.timeframes[timeframe].previous}hrs</p>
+            <h3 class="card__content-hours">
+              ${item.timeframes[timeframe].current}${item.timeframes[timeframe].current <= 1 ? 'hr' : 'hrs'}
+            </h3>
+            <p class="card__content-previous">
+              ${previousLabel} - ${item.timeframes[timeframe].previous}${item.timeframes[timeframe].previous <= 1 ? 'hr' : 'hrs'}
+            </p>
           </main>
         </div>
       `;
