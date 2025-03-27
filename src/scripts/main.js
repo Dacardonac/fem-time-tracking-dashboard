@@ -58,13 +58,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       article.innerHTML = `
         <header class="card__header">
-          <img class="card__header-icon" src="/src/assets/icons/icon-${item.title.toLowerCase().replace(/ /g, '-')}.svg" alt="${item.title} icon">
+          <img class="card__header-icon" src="/icons/icon-${item.title.toLowerCase().replace(/ /g, '-')}.svg" alt="${item.title} icon">
         </header>
         <div class="card__content">
           <header class="card__content-header">
             <h2 class="card__content-title">${item.title}</h2>
             <button class="card__content-options" aria-label="Options">
-              <img src="./src/assets/icons/icon-ellipsis.svg" alt="Ellipsis icon">
+              <img src="/icons/icon-ellipsis.svg" alt="Ellipsis icon">
             </button>
           </header>
           <main class="card__content-details">
