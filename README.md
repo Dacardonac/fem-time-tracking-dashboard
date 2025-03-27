@@ -40,9 +40,13 @@ This is a solution to the **[Time tracking dashboard challenge on Frontend Mento
 
 Desktop 🖥️
 
-**![Solution Desktop Screenshot](./)**
+**![Solution Desktop Screenshot](./public/screenshots/desktop-design.webp)**
 
-Mobile 📱
+Tablet 📱
+
+**![Solution Mobile Screenshot](./public/screenshots/tablet-design.webp)**
+
+Mobile 🤳
 
 **![Solution Mobile Screenshot](./public/screenshots/mobile-design.webp)**
 
