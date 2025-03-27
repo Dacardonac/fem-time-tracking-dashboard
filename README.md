@@ -44,7 +44,7 @@ Desktop 🖥️
 
 Mobile 📱
 
-**![Solution Mobile Screenshot](./)**
+**![Solution Mobile Screenshot](./public/screenshots/mobile-design.webp)**
 
 
 ### Links 📍
@@ -59,36 +59,35 @@ To use this project, you need to follow these steps:
 1. **Clone the repository**:
 
   ```bash
-  git clone
+  git clone https://github.com/Dacardonac/fem-time-tracking-dashboard.git
   ```
 
-2. **Navigate to the project directory**:
+2. **Navigate to the project directory 📂**:
 
   ```bash
-  cd
+  cd fem-time-tracking-dashboard
   ```
 
-3. **Install dependencies: Make sure you have Node.js installed, then run**:
+3. **Install dependencies ⬇️: Make sure you have Node.js installed, then run**:
 
   ```bash
   npm install
   ```
 
-4. **Run the project: Start the development server with**:
+4. **Run the project ▶️: Start the development server with**:
 
   ```bash
   npm run dev
   ```
   This will start the project locally, typically accessible at `http://localhost:3000`.
 
-  **Important** ⚠️
-
-1. **Start the JSON server: To simulate a backend for data, run**:
+5. **If you want to see a preview of the project ▶️**:
 
   ```bash
-  npx json-server --watch data.json --port 3001
+  npm run build
+  npm run preview
   ```
-  **This will start the JSON server on `http://localhost:3001`.**
+  **This will start the Preview server on `http://localhost:4173`.**
 
 ## My process 🎓
 
@@ -104,6 +103,7 @@ To use this project, you need to follow these steps:
 - [Vite](https://vitejs.dev/) - Frontend Tooling
 - [Sass/Scss](https://sass-lang.com/) - Modules and Styles
 - [BEM Methodology](https://en.bem.info/methodology/) - Nomenclature for Classes
+- [SweetAlert2](https://sweetalert2.github.io/) - Alerts
 - Markdown - README.md file (Documentation)
 
 ### What I learned 🧠
@@ -114,7 +114,36 @@ With this project, I learned, implemented, and practiced **JavaScript**, along w
 
 ``` JavaScript
 
+  function printCards(data, timeframe) {
+    const container = document.getElementById('cards-container');
+    container.innerHTML = '';
 
+    data.forEach((item) => {
+      const article = document.createElement('article');
+      article.classList.add('card');
+      article.style.backgroundColor = `var(--${item.title.toLowerCase().replace(/ /g, '-')})`;
+      article.setAttribute('aria-label', `${item.title} tracking card`);
+
+      article.innerHTML = `
+        <header class="card__header">
+          <img class="card__header-icon" src="/src/assets/icons/icon-${item.title.toLowerCase().replace(/ /g, '-')}.svg" alt="${item.title} icon">
+        </header>
+        <div class="card__content">
+          <header class="card__content-header">
+            <h2 class="card__content-title">${item.title}</h2>
+            <button class="card__content-options" aria-label="Options">
+              <img src="./src/assets/icons/icon-ellipsis.svg" alt="Ellipsis icon">
+            </button>
+          </header>
+          <main class="card__content-details">
+            <h3 class="card__content-hours">${item.timeframes[timeframe].current}hrs</h3>
+            <p class="card__content-previous">Last Week - ${item.timeframes[timeframe].previous}hrs</p>
+          </main>
+        </div>
+      `;
+      container.appendChild(article);
+    });
+  };
 
 ```
 
@@ -132,7 +161,7 @@ With this path, I want to continue learning more about **JavaScript**, **Respons
 - Frontend Mentor - **[@Dacardonac](https://www.frontendmentor.io/profile/Dacardonac)**
 - LinkedIn - **[@Daniel Alejandro Cano Cardona](https://www.linkedin.com/in/daniel-alejandro-cano-cardona/)**
 
-## Acknowledgments
+## Acknowledgments 🙌
 
 I want to thank **[Jairovg](https://github.com/jairovg)** for the teachings and his help to complete this challenge in a good way and with good practices.
 
