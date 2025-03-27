@@ -1,9 +1,11 @@
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   background-color: var(--navy-950);
   color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%; /* O un ancho específico como max-width */
+  margin: 0 auto;
 }
