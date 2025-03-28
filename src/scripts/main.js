@@ -67,14 +67,14 @@ document.addEventListener('DOMContentLoaded', async () => {
               <img src="/icons/icon-ellipsis.svg" alt="Ellipsis icon">
             </button>
           </header>
-          <main class="card__content-details">
+          <div class="card__content-details">
             <h3 class="card__content-hours">
               ${item.timeframes[timeframe].current}${item.timeframes[timeframe].current <= 1 ? 'hr' : 'hrs'}
             </h3>
             <p class="card__content-previous">
               ${previousLabel} - ${item.timeframes[timeframe].previous}${item.timeframes[timeframe].previous <= 1 ? 'hr' : 'hrs'}
             </p>
-          </main>
+          </div>
         </div>
       `;
       container.appendChild(article);
