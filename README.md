@@ -53,8 +53,8 @@ Mobile 🤳
 
 ### Links 📍
 
-- Solution URL: **[Frontend Mentor Solution 👨‍💻]()**
-- Live Site URL: **[Solution Deploy in Vercel 🚀]()**
+- Solution URL: **[Frontend Mentor Solution 👨‍💻](https://www.frontendmentor.io/solutions/time-tracking-dashboard-html-scss-js-u_Kh1TYAVKhttps://www.frontendmentor.io/solutions/time-tracking-dashboard-html-scss-js-u_Kh1TYAVK)**
+- Live Site URL: **[Solution Deploy in Vercel 🚀](https://fem-time-tracking-dashboard-five.vercel.app/)**
 
 ### How to Use the Project 💻
 
